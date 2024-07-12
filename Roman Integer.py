@@ -1,3 +1,8 @@
+# The key idea is to compare each Roman numeral character with the next one:
+
+# If the current character is less than the next, it indicates a subtractive combination (like IV, IX).
+# Otherwise, it indicates an additive combination.
+
 class Solution(object):
     def romanToInt(self, s):
         """
@@ -24,3 +29,5 @@ class Solution(object):
                 result += roman_to_int[s[i]]
         
         return result
+
+
